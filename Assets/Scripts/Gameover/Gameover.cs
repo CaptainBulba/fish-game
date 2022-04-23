@@ -15,9 +15,9 @@ public class Gameover : MonoBehaviour
         scoreText.text = "Score: " + PlayerPrefs.GetInt("score");
     }
 
-    
-    public void RestartGame()
+    void Update()
     {
-        SceneManager.LoadScene(playScene);
+        if (Input.GetKeyDown(KeyCode.Space))
+            SceneManager.LoadScene(playScene);
     }
 }
