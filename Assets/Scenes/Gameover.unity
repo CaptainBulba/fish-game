@@ -1379,7 +1379,7 @@ GameObject:
   - component: {fileID: 889689200}
   - component: {fileID: 889689199}
   m_Layer: 5
-  m_Name: Space
+  m_Name: R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1456,7 +1456,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SPACE
+  m_Text: R
 --- !u!222 &889689201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press                to restart
+  m_Text: Press     to restart
 --- !u!222 &1817575047
 CanvasRenderer:
   m_ObjectHideFlags: 0
