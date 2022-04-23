@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class Start : MonoBehaviour
 {
     private string playScene = "Play";
-    public void StartGame()
+
+    void Update()
     {
-        SceneManager.LoadScene(playScene);
+        if (Input.GetKeyDown(KeyCode.Space))
+            SceneManager.LoadScene(playScene);
     }
 }
