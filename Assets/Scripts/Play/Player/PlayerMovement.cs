@@ -11,20 +11,39 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public GameObject controllerObject;
+    private GameController gameController;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameController = controllerObject.GetComponent<GameController>();
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-            yMovement = speedUp;
+        if (gameController.GetGamePause())
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                gameController.SetGamePause(false);
+            }
+            else
+                rb.velocity = Vector3.zero;
+        }
         else
-            yMovement = -speedDown;
-     
- 
-        Move();
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                gameController.SetGamePause(true);
+            }
+                
+            if (Input.GetKey(KeyCode.Space))
+                yMovement = speedUp;
+            else
+                yMovement = -speedDown;
+            Move();
+        }
     }
 
     private void Move()

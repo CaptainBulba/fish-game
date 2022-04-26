@@ -19,13 +19,20 @@ public class Spawner : MonoBehaviour
 
     private GameObject instanObject;
 
+    private GameController gameController;
+
     void Start()
     {
-        
-        InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
-        // switch off CancelInvoke(nameof(Spawn));
+        gameController = GetComponent<GameController>();
     }
 
+    public void StartSpawning()
+    {
+        if(gameController.GetGamePause())
+            InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+        else
+            CancelInvoke(nameof(Spawn));
+    }
     private void Spawn()
     {
         rightScreenEdge = cam.ScreenToWorldPoint(new Vector2(cam.pixelWidth, 0)).x + extraScreenOut;
