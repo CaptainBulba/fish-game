@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,6 +59,10 @@ public class GameController : MonoBehaviour
     public void AddScore(float value)
     {
         distance += value;
-        scoreText.GetComponent<Text>().text = "Distance: " + Mathf.Round(distance);
+
+        if(distance < 1000f)
+            scoreText.GetComponent<Text>().text = "Distance: " + Math.Round(distance) + " m";
+        else
+            scoreText.GetComponent<Text>().text = "Distance: " + Math.Round(distance / 1000, 2) + " km";
     }
 }
