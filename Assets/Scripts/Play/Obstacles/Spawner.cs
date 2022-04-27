@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject[] upperObstacles;
     public GameObject[] lowerObstacles;
+
     public float spawnRate = 0.5f;
 
     public Camera cam;
@@ -15,11 +16,9 @@ public class Spawner : MonoBehaviour
     private float extraScreenOut = 5f;
 
     private GameController gameController;
-
-    private bool objectToSpawn = false;
-
-
     private GameObject obstaclePrefab;
+
+    private bool objectToSpawn = true;
 
     void Start()
     {

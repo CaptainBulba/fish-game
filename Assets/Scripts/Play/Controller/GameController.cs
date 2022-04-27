@@ -36,8 +36,8 @@ public class GameController : MonoBehaviour
         {
             SetStartText(false);
             SetScoreText(true);
+            spawnerScript.StartSpawning();
         }
-        spawnerScript.StartSpawning();
         return gamePause = value;
     }
 
