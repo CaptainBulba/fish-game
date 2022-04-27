@@ -6,18 +6,23 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speedUp;
     public float speedDown;
+    
     public float xMovement;
     private float yMovement;
+    
+    private float lastXcords;
 
     private Rigidbody2D rb;
 
     public GameObject controllerObject;
+
     private GameController gameController;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gameController = controllerObject.GetComponent<GameController>();
+        lastXcords = transform.position.x;
     }
 
     void Update()
@@ -49,5 +54,12 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector2(xMovement, yMovement);
+        UpdateDistance();
+    }
+
+    private void UpdateDistance()
+    {
+        gameController.AddScore(transform.position.x - lastXcords);
+        lastXcords = transform.position.x;
     }
 }

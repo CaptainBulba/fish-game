@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameController : MonoBehaviour
     private bool gamePause = true;
 
     private Spawner spawnerScript;
+
+    private float distance = 0f;
 
     void Start()
     {
@@ -45,5 +48,16 @@ public class GameController : MonoBehaviour
     public void SetScoreText(bool value)
     {
         scoreText.SetActive(value);
+    }
+
+    public float GetScore()
+    {
+        return distance;
+    }
+
+    public void AddScore(float value)
+    {
+        distance += value;
+        scoreText.GetComponent<Text>().text = "Distance: " + Mathf.Round(distance);
     }
 }
