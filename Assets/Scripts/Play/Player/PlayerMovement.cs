@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -27,39 +28,40 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (gameController.GetGamePause())
+        if (!gameController.GetIsStart())
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                gameController.SetGamePause(false);
-            }
-            else
-                rb.velocity = Vector3.zero;
+            if (Input.GetKeyDown(KeyCode.Space)) gameController.StartGame();
         }
         else
         {
+            if (!gameController.GetIsPause()) Move();
+
+            if (Input.GetKeyDown(KeyCode.R) && gameController.GetIsPause()) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
             if (Input.GetKeyDown(KeyCode.P))
             {
-                gameController.SetGamePause(true);
+                if (!gameController.GetIsPause())
+                {
+                    rb.velocity = Vector3.zero;
+                    gameController.SetGamePause(true);
+                }
+                else gameController.SetGamePause(false);
             }
-                
-            if (Input.GetKey(KeyCode.Space))
-                yMovement = speedUp;
-            else
-                yMovement = -speedDown;
-            Move();
         }
     }
 
     private void Move()
     {
+        if (Input.GetKey(KeyCode.Space)) yMovement = speedUp;
+        else  yMovement = -speedDown;
+
         rb.velocity = new Vector2(xMovement, yMovement);
         UpdateDistance();
     }
 
     private void UpdateDistance()
     {
-        gameController.AddScore(transform.position.x - lastXcords);
+        gameController.AddDistance(transform.position.x - lastXcords);
         lastXcords = transform.position.x;
     }
 }

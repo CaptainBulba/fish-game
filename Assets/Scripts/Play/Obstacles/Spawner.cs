@@ -25,9 +25,9 @@ public class Spawner : MonoBehaviour
         gameController = GetComponent<GameController>();
     }
 
-    public void StartSpawning()
+    public void ObstacleSpawner()
     {
-        if(gameController.GetGamePause())
+        if(!gameController.GetIsPause())
             InvokeRepeating(nameof(InitiateSpawning), spawnRate, spawnRate);
         else
             CancelInvoke(nameof(InitiateSpawning));

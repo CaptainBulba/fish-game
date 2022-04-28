@@ -6,10 +6,14 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject startText;
-    public GameObject scoreText;
-    
-    private bool gamePause = true;
+    public GameObject startInterface;
+    public GameObject playInterface;
+    public GameObject pauseInterface;
+
+    public Text distanceText;
+
+    private bool isPause = false;
+    private bool isStart = false;
 
     private Spawner spawnerScript;
 
@@ -20,49 +24,66 @@ public class GameController : MonoBehaviour
         spawnerScript = GetComponent<Spawner>();
     }
 
-    public bool GetGamePause()
+    public bool GetIsPause()
     {
-        return gamePause;
+        return isPause;
     }
 
-    public bool SetGamePause(bool value)
+    public bool GetIsStart()
+    {
+        return isStart;
+    }
+
+    public void SetGamePause(bool value)
     {
         if(value)
         {
-            SetStartText(false);
-            SetScoreText(true);
+            SetPauseInterface(true);
+            isPause = true;
         } 
         else
         {
-            SetStartText(false);
-            SetScoreText(true);
-            spawnerScript.StartSpawning();
+            SetPauseInterface(false);
+            isPause = false;
         }
-        return gamePause = value;
+        spawnerScript.ObstacleSpawner();
     }
 
-    public void SetStartText(bool value)
+    public void SetStartInterface(bool value)
     {
-        startText.SetActive(value);
+        startInterface.SetActive(value);
     }
 
-    public void SetScoreText(bool value)
+    public void SetPauseInterface(bool value)
     {
-        scoreText.SetActive(value);
+        pauseInterface.SetActive(value);
     }
 
-    public float GetScore()
+    public void SetPlayInterface(bool value)
+    {
+        playInterface.SetActive(value);
+    }
+
+    public void StartGame()
+    {
+        isStart = true;
+        SetStartInterface(false);
+        SetPlayInterface(true);
+        spawnerScript.ObstacleSpawner();
+    }
+
+    public float GetDistance()
     {
         return distance;
     }
 
-    public void AddScore(float value)
+    public void AddDistance(float value)
     {
         distance += value;
 
         if(distance < 1000f)
-            scoreText.GetComponent<Text>().text = "Distance: " + Math.Round(distance) + " m";
+            distanceText.GetComponent<Text>().text = "Distance: " + Math.Round(distance) + " m";
         else
-            scoreText.GetComponent<Text>().text = "Distance: " + Math.Round(distance / 1000, 2) + " km";
+            distanceText.GetComponent<Text>().text = "Distance: " + Math.Round(distance / 1000, 2) + " km";
     }
 }
