@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Gameover : MonoBehaviour
 {
-    public Text distanceText;
+    public TextMeshProUGUI distanceText;
 
     private string playScene = "Play";
 

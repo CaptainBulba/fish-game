@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ public class GameController : MonoBehaviour
     public GameObject playInterface;
     public GameObject pauseInterface;
 
-    public Text distanceText;
+    public TextMeshProUGUI distanceText;
 
     private bool isPause = false;
     private bool isStart = false;
@@ -19,7 +20,7 @@ public class GameController : MonoBehaviour
 
     private float distance = 0f;
 
-    void Start()
+    void Start()    
     {
         spawnerScript = GetComponent<Spawner>();
     }
@@ -81,8 +82,8 @@ public class GameController : MonoBehaviour
         distance += value;
 
         if(distance < 1000f)
-            distanceText.GetComponent<Text>().text = "Distance: " + Math.Round(distance) + " m";
+            distanceText.text = "Distance: " + Math.Round(distance) + " m";
         else
-            distanceText.GetComponent<Text>().text = "Distance: " + Math.Round(distance / 1000, 2) + " km";
+            distanceText.text = "Distance: " + Math.Round(distance / 1000, 2) + " km";
     }
 }
