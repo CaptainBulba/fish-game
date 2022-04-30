@@ -46,7 +46,6 @@ public class GameController : MonoBehaviour
             SetPauseInterface(false);
             isPause = false;
         }
-        spawnerScript.ObstacleSpawner();
     }
 
     public void SetStartInterface(bool value)
@@ -69,7 +68,7 @@ public class GameController : MonoBehaviour
         isStart = true;
         SetStartInterface(false);
         SetPlayInterface(true);
-        spawnerScript.ObstacleSpawner();
+     //   spawnerScript.ObstacleSpawner();
     }
 
     public float GetDistance()

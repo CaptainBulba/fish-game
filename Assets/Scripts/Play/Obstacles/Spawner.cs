@@ -23,27 +23,24 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         gameController = GetComponent<GameController>();
+        InvokeRepeating(nameof(InitiateSpawning), spawnRate, spawnRate);
     }
 
-    public void ObstacleSpawner()
-    {
-        if(!gameController.GetIsPause())
-            InvokeRepeating(nameof(InitiateSpawning), spawnRate, spawnRate);
-        else
-            CancelInvoke(nameof(InitiateSpawning));
-    }
     private void InitiateSpawning()
     {
-        if(objectToSpawn) 
-            obstaclePrefab = upperObstacles[Random.Range(0, upperObstacles.Length)];
-        else if(!objectToSpawn)
-            obstaclePrefab = lowerObstacles[Random.Range(0, lowerObstacles.Length)];
+        if(!gameController.GetIsPause() && gameController.GetIsStart())
+        {
+            if (objectToSpawn)
+                obstaclePrefab = upperObstacles[Random.Range(0, upperObstacles.Length)];
+            else if (!objectToSpawn)
+                obstaclePrefab = lowerObstacles[Random.Range(0, lowerObstacles.Length)];
 
-        ObstacleData obstacleData = obstaclePrefab.GetComponent<ObstacleData>();
-        float obstacleCords = Random.Range(obstacleData.GetMinimumCord(), obstacleData.GetMaximumCord());
+            ObstacleData obstacleData = obstaclePrefab.GetComponent<ObstacleData>();
+            float obstacleCords = Random.Range(obstacleData.GetMinimumCord(), obstacleData.GetMaximumCord());
 
-        Spawn(obstaclePrefab, obstacleCords);
-        objectToSpawn = !objectToSpawn;
+            Spawn(obstaclePrefab, obstacleCords);
+            objectToSpawn = !objectToSpawn;
+        }
     }
 
     private void Spawn(GameObject obstaclePrefab, float obstacleCords)
