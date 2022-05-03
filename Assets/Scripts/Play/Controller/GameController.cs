@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public GameObject pauseInterface;
 
     public TextMeshProUGUI distanceText;
+    public TextMeshProUGUI fishStartText;
 
     private bool isPause = false;
     private bool isStart = false;
