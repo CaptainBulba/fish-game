@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI fishStartText;
+    public GameObject pauseFactText;
 
     private bool isPause = false;
     private bool isStart = false;
@@ -40,6 +41,7 @@ public class GameController : MonoBehaviour
         if(value)
         {
             SetPauseInterface(true);
+            pauseFactText.GetComponent<TextMeshProUGUI>().text = pauseFactText.GetComponent<PauseFact>().pauseFactText();
             isPause = true;
         } 
         else
