@@ -19,9 +19,13 @@ public class PlayerMovement : MonoBehaviour
 
     private GameController gameController;
 
+    private Animator anim;
+    private string animName = "Fish";
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         gameController = controllerObject.GetComponent<GameController>();
         lastXcords = transform.position.x;
     }
@@ -30,13 +34,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!gameController.GetIsStart())
         {
-            if (Input.GetKeyDown(KeyCode.Space)) gameController.StartGame();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                gameController.StartGame();
+                anim.Play(animName);
+            }
         }
         else
         {
             if (!gameController.GetIsPause()) Move();
-
-            if (Input.GetKeyDown(KeyCode.R) && gameController.GetIsPause()) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
             if (Input.GetKeyDown(KeyCode.P))
             {
