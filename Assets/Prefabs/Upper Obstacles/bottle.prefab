@@ -98,6 +98,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -0.7
   maximumCord: 3.4
+  facts:
+  - 100 million marine animals die each year from plastic waste alone
+  - There are 5.25 trillion pieces of plastic waste estimated to be in our oceans
+  - 12-14,000 tons of plastic are ingested by North Pacific fish yearly
+  - Annually, we use 500 Billion plastic bottles
+  - Each year, 8 million tons of plastic reaches our oceans
 --- !u!60 &2296621940376119954
 PolygonCollider2D:
   m_ObjectHideFlags: 0

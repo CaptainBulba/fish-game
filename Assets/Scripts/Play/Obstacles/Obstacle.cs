@@ -17,8 +17,8 @@ public class Obstacle : MonoBehaviour
     {
         if (col.gameObject.tag == obstacleTag)
         {
-            PlayerPrefs.SetFloat("distance", gameController.GetDistance());
-            PlayerPrefs.SetString("fact", col.gameObject.GetComponent<ObstacleData>().GetRandomFact());
+            PlayerPrefs.SetFloat(distanceName, gameController.GetDistance());
+            PlayerPrefs.SetString(factName, col.gameObject.GetComponent<ObstacleData>().GetRandomFact());
             SceneManager.LoadScene(gameoverScene);
         }
     }

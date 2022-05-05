@@ -98,6 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -4.5
   maximumCord: -3.6
+  facts:
+  - 'In dev: fact #1'
+  - 'In dev: fact #2'
 --- !u!60 &8997724828335879741
 PolygonCollider2D:
   m_ObjectHideFlags: 0

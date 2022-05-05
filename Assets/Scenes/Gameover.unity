@@ -1391,7 +1391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceText: {fileID: 417265468}
-  factText: {fileID: 0}
+  factText: {fileID: 1774969041}
 --- !u!4 &768554161
 Transform:
   m_ObjectHideFlags: 0
