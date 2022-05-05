@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class Gameover : MonoBehaviour
 {
     public TextMeshProUGUI distanceText;
+    int skipFrames = 10;
+    int currentFrame = 0;
 
     private string playScene = "Play";
 
@@ -24,6 +26,12 @@ public class Gameover : MonoBehaviour
 
     void Update()
     {
+        if(currentFrame <= skipFrames)
+        {
+            currentFrame++;
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(playScene);
     }
