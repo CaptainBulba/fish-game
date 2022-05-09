@@ -20,6 +20,8 @@ public class Spawner : MonoBehaviour
 
     private bool objectToSpawn = true;
 
+    private float maxObstacleRotation = 180f;
+
     void Start()
     {
         gameController = GetComponent<GameController>();
@@ -48,5 +50,6 @@ public class Spawner : MonoBehaviour
         rightScreenEdge = cam.ScreenToWorldPoint(new Vector2(cam.pixelWidth, 0)).x + extraScreenOut;
         GameObject instanObject = Instantiate(obstaclePrefab, new Vector2(rightScreenEdge, obstacleCords), Quaternion.identity);
         instanObject.transform.parent = gameObject.transform;
+        if (objectToSpawn) instanObject.transform.rotation = Quaternion.Euler(0.0f, 0.0f, Random.Range(0f, maxObstacleRotation));
     }
 }
