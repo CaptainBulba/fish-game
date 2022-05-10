@@ -22,8 +22,11 @@ public class Spawner : MonoBehaviour
 
     private float maxObstacleRotation = 180f;
 
+    private DeleteObstacle deleteObstacle;
+
     void Start()
     {
+        deleteObstacle = GetComponent<DeleteObstacle>();
         gameController = GetComponent<GameController>();
         InvokeRepeating(nameof(InitiateSpawning), spawnRate, spawnRate);
     }
@@ -48,8 +51,12 @@ public class Spawner : MonoBehaviour
     private void Spawn(GameObject obstaclePrefab, float obstacleCords)
     {
         rightScreenEdge = cam.ScreenToWorldPoint(new Vector2(cam.pixelWidth, 0)).x + extraScreenOut;
+
         GameObject instanObject = Instantiate(obstaclePrefab, new Vector2(rightScreenEdge, obstacleCords), Quaternion.identity);
         instanObject.transform.parent = gameObject.transform;
+        
         if (objectToSpawn) instanObject.transform.rotation = Quaternion.Euler(0.0f, 0.0f, Random.Range(0f, maxObstacleRotation));
+
+        StartCoroutine(deleteObstacle.SelfDestruct(instanObject));
     }
 }
