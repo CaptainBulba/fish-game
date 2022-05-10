@@ -1659,7 +1659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxFishCord: 5
-  minFishCord: 0
   speedUp: 1.8
   speedDown: 1.5
   xMovement: 3
@@ -5004,10 +5003,11 @@ MonoBehaviour:
   - {fileID: 419019892008642613, guid: 4ef512ba5e128364e986e45ea33e8745, type: 3}
   - {fileID: 8670487142021066743, guid: 6c9fb62c6dc7f44488e6bf5f302df8c8, type: 3}
   - {fileID: 7761809037219093053, guid: 699d7d7e9f6a72d4089cc2c7432bd155, type: 3}
+  - {fileID: 6223809264058575398, guid: 47e8034973e397940b09fa4e400324bc, type: 3}
   lowerObstacles:
   - {fileID: 3026379503183659224, guid: f5d6643dc28a3dc4187f54388d7172b1, type: 3}
   - {fileID: 5456897805750228315, guid: 290b1d8acfc48d34292997266922fbbe, type: 3}
-  spawnRate: 0.8
+  spawnRate: 0.9
   cam: {fileID: 519420031}
 --- !u!4 &1466517709
 Transform:
