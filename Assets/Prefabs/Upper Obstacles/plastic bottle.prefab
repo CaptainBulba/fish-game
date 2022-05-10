@@ -170,4 +170,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: 3.8
   maximumCord: -1.35
-  facts: []
+  facts:
+  - Test

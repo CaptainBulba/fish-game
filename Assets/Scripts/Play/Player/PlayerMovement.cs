@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float maxFishCord;
-    public float minFishCord;
 
     public float speedUp;
     public float speedDown;
@@ -45,7 +44,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (!gameController.GetIsPause()) Move();
+            if (!gameController.GetIsPause())
+            {
+
+                Move();
+                if (gameObject.transform.position.y >= maxFishCord) rb.velocity = new Vector2(rb.velocity.x, -speedDown);
+            }
 
             if (Input.GetKeyDown(KeyCode.P))
             {
@@ -57,16 +61,15 @@ public class PlayerMovement : MonoBehaviour
                 else gameController.SetGamePause(false);
             }
         }
-
     }
 
     private void Move()
     {
+
         if (Input.GetKey(KeyCode.Space)) yMovement = speedUp;
         else  yMovement = -speedDown;
 
         rb.velocity = new Vector2(xMovement, yMovement);
-       // if (gameObject.transform.position.y >= 1f) { rb.velocity = new Vector2(rb.velocity.x, -0.1f); }
         UpdateDistance();
     }
 

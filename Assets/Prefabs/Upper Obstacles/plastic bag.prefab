@@ -99,7 +99,7 @@ MonoBehaviour:
   minimumCord: -0.6
   maximumCord: 4.1
   facts:
-  - 
+  - Test
 --- !u!60 &5624112085432467968
 PolygonCollider2D:
   m_ObjectHideFlags: 0

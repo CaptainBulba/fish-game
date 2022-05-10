@@ -1137,7 +1137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &322507785
 Transform:
   m_ObjectHideFlags: 0
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e13ebce08d754591aa0b560d9a78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFishCord: 0
+  maxFishCord: 5
   minFishCord: 0
   speedUp: 1.8
   speedDown: 1.5
@@ -2968,7 +2968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &815471865
 Transform:
   m_ObjectHideFlags: 0
