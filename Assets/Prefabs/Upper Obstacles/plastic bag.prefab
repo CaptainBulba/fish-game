@@ -98,7 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -0.6
   maximumCord: 4.1
-  facts: []
+  facts:
+  - 
 --- !u!60 &5624112085432467968
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -109,7 +110,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
