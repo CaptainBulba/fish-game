@@ -9,10 +9,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float speedUp;
     public float speedDown;
-    
+
     public float xMovement;
     private float yMovement;
-    
+
     private float lastXcords;
 
     private Rigidbody2D rb;
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private GameController gameController;
 
     private Animator anim;
-    private string animName = "Fish";
+    private string swimAnim = "Fish";
 
     void Start()
     {
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 gameController.StartGame();
-                anim.Play(animName);
+               // PlayAnimation(swimAnim);
             }
         }
         else
@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         if (Input.GetKey(KeyCode.Space)) yMovement = speedUp;
-        else  yMovement = -speedDown;
+        else yMovement = -speedDown;
 
         rb.velocity = new Vector2(xMovement, yMovement);
         UpdateDistance();
@@ -77,5 +77,10 @@ public class PlayerMovement : MonoBehaviour
     {
         gameController.AddDistance(transform.position.x - lastXcords);
         lastXcords = transform.position.x;
+    }
+
+    public void PlayAnimation(string animName)
+    {
+        anim.Play(animName);
     }
 }

@@ -13,13 +13,38 @@ public class Obstacle : MonoBehaviour
     private string distanceName = "distance";
     private string factName = "fact";
 
+    private AudioSource audioSource;
+    private PlayerMovement playerMovement;
+
+    private string crashAnim = "Crash";
+
+    public float changeSceneAfter;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        playerMovement = GetComponent<PlayerMovement>();
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == obstacleTag)
         {
-            PlayerPrefs.SetFloat(distanceName, gameController.GetDistance());
-            PlayerPrefs.SetString(factName, col.gameObject.GetComponent<ObstacleData>().GetRandomFact());
-            SceneManager.LoadScene(gameoverScene);
+            StartCoroutine(GameOver(col.gameObject));
+
         }
+    }
+
+    IEnumerator GameOver(GameObject obstacle)
+    {
+        //   playerMovement.PlayAnimation(crashAnim);
+        audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
+
+        yield return new WaitForSeconds(changeSceneAfter);
+
+        PlayerPrefs.SetFloat(distanceName, gameController.GetDistance());
+        PlayerPrefs.SetString(factName, obstacle.GetComponent<ObstacleData>().GetRandomFact());
+
+        SceneManager.LoadScene(gameoverScene);
     }
 }
