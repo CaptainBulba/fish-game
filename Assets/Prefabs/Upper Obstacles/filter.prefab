@@ -109,20 +109,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.3888889, y: -0.1574074}
-      - {x: 0.1574074, y: 0.074074075}
-      - {x: 0.027777778, y: 0.23148148}
-      - {x: -0.2962963, y: 0.5092593}
-      - {x: -0.3611111, y: 0.5092593}
-      - {x: -0.46296296, y: 0.39814815}
-      - {x: -0.46296296, y: 0.3425926}
-      - {x: -0.10185185, y: -0.027777778}
-      - {x: 0.0925926, y: -0.3240741}
-      - {x: 0.2777778, y: -0.41666666}
-      - {x: 0.3425926, y: -0.41666666}
-      - {x: 0.4351852, y: -0.3148148}
-      - {x: 0.46296296, y: -0.25}
-      - {x: 0.46296296, y: -0.2037037}
+    - - {x: 0.35445005, y: -0.1947161}
+      - {x: 0.253752, y: -0.15145862}
+      - {x: 0.13731825, y: 0.05685477}
+      - {x: -0.0037909877, y: 0.20278256}
+      - {x: -0.3120808, y: 0.48917}
+      - {x: -0.3481967, y: 0.4877351}
+      - {x: -0.4428738, y: 0.37088415}
+      - {x: -0.45004854, y: 0.35837698}
+      - {x: -0.09898201, y: 0.01957549}
+      - {x: 0.14425075, y: -0.30254966}
+      - {x: 0.25194895, y: -0.36070386}
+      - {x: 0.31245887, y: -0.3822278}
+      - {x: 0.3806572, y: -0.29616046}
+      - {x: 0.3725613, y: -0.23421562}
+      - {x: 0.4256545, y: -0.22379297}
 --- !u!114 &1018922832447437675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,9 +141,8 @@ MonoBehaviour:
   facts:
   - Cigarette butts are the main source of ocean pollution
   - It takes about 12 years for a cigarette filter to decompose
-  - Cigarette filters account for 40% of the waste recovered on beaches during international
-    clean-up campaigns
+  - Cigarette filters account for 40% of the waste recovered on beaches
   - "The number 1 man-made contaminant in the world\u2019s oceans is the cigarette
     filter"
-  - "For 32 consecutive years, cigarette filters have been the single most collected
+  - "For 32 consecutive years, \ncigarette filters have been the single most collected
     item on the world\u2019s beaches"
