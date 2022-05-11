@@ -1975,8 +1975,8 @@ MonoBehaviour:
   - {fileID: 1660529655}
   - {fileID: 263324227}
   m_Bounds:
-    m_Center: {x: 0.00000047683716, y: -0.0005187988, z: 0}
-    m_Extent: {x: 4.620371, y: 4.014722, z: 0}
+    m_Center: {x: 0, y: -0.00051927567, z: 0}
+    m_Extent: {x: 4.62037, y: 4.014722, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &518256905
@@ -5021,7 +5021,6 @@ MonoBehaviour:
   lowerObstacles:
   - {fileID: 3026379503183659224, guid: f5d6643dc28a3dc4187f54388d7172b1, type: 3}
   - {fileID: 5456897805750228315, guid: 290b1d8acfc48d34292997266922fbbe, type: 3}
-  - {fileID: 8443197279887819977, guid: b1c46ae9d3cd94f46a287fae399996df, type: 3}
   spawnRate: 0.9
   cam: {fileID: 519420031}
 --- !u!4 &1466517709
