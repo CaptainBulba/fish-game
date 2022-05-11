@@ -99,7 +99,11 @@ MonoBehaviour:
   minimumCord: -0.6
   maximumCord: 4.1
   facts:
-  - Test
+  - Annually we discard 1 Trillion plastic bags worldwide
+  - Loggerhead sea turtles hunt jellyfish, which look like plastic bags
+  - "\r12-14,000 tons of plastic are ingested by North Pacific fish yearly"
+  - There are 5.25 trillion pieces of plastic waste estimated to be in our oceans
+  - "\r100 million marine animals die each year from plastic waste alone"
 --- !u!60 &5624112085432467968
 PolygonCollider2D:
   m_ObjectHideFlags: 0

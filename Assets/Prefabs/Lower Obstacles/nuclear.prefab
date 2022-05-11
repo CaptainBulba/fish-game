@@ -99,8 +99,10 @@ MonoBehaviour:
   minimumCord: -4.55
   maximumCord: -3.6
   facts:
-  - 'In dev: fact #1'
-  - 'In dev: fact #2'
+  - 1950-1998 over 100 nuclear blast tests occurred in our oceans
+  - Nuclear power plants placed near the water add radiological pollution by releasing
+    atomic wastes
+  - Submarine accidents and sinking can add radioactive pollution to our oceans
 --- !u!60 &2308511493716871575
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -141,9 +141,8 @@ MonoBehaviour:
   facts:
   - Cigarette butts are the main source of ocean pollution
   - It takes about 12 years for a cigarette filter to decompose
-  - Cigarette filters account for 40% of the waste recovered on beaches during international
-    clean-up campaigns
+  - Cigarette filters account for 40% of the waste recovered on beaches
   - "The number 1 man-made contaminant in the world\u2019s oceans is the cigarette
     filter"
-  - "For 32 consecutive years, cigarette filters have been the single most collected
+  - "For 32 consecutive years, \ncigarette filters have been the single most collected
     item on the world\u2019s beaches"

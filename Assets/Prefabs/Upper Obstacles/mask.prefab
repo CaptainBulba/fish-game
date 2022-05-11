@@ -159,8 +159,9 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   facts:
-  - Most face masks contain plastics or other by-products of plastics materials
+  - Most disposable face masks contain plastics or other by-products of plastics
+    materials
   - If not properly cut, the string of face masks can cause entanglements with marine
     animals
-  - Disposable masks may be releasing dangerous pollutants, including heavy metals
-    and toxic dyes
+  - "Disposable masks may be releasing dangerous pollutants, \nincluding heavy metals
+    and toxic dyes"

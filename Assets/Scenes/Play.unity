@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -254, y: -110.00001}
+  m_AnchoredPosition: {x: -209, y: -110.00001}
   m_SizeDelta: {x: 169.91998, y: 520.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12351222
@@ -306,13 +306,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -890,7 +890,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -107}
+  m_AnchoredPosition: {x: 7, y: -107}
   m_SizeDelta: {x: 277.26, y: 63.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222822739
@@ -940,13 +940,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1480,13 +1480,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2167,13 +2167,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 33
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2534,7 +2534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -110}
+  m_AnchoredPosition: {x: 193, y: -110}
   m_SizeDelta: {x: 257.58, y: 520.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668236593
@@ -2584,13 +2584,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3131,9 +3131,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facts:
-  - 'Ocean fact: in development #1'
-  - 'Ocean fact: in development #2'
-  - 'Ocean fact: in development #3'
+  - "About 94 percent of the earth\u2019s wildlife is found in the ocean. \nMaybe
+    I\u2019ll see some if I keep swimming!"
+  - "We have only explored about 5% of the world\u2019s oceans. \nI\u2019ll keep
+    looking!"
+  - "Only five percent of the ocean\u2019s floor has been mapped in detail. \nLet\u2019s
+    keep going!"
+  - "The ocean covers more than 70 percent of the earth\u2019s surface. \nThere is
+    so much more to see!"
+  - "Many organizations are addressing the ongoing and \never-growing issue of ocean
+    pollution. \nThey help me keep swimming!"
+  - "The Great Pacific Garbage Patch, a mass of floating debris, \nis twice the size
+    of Texas"
+  - "Mammals like seals drown in discarded fishing nets \u2013 \nthis has been dubbed
+    \u2018ghost fishing\u2019"
 --- !u!114 &861963824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,13 +3192,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4392,7 +4403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103.4, y: -106.21001}
+  m_AnchoredPosition: {x: -90, y: -106.21001}
   m_SizeDelta: {x: 45.12, y: 46.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273761058
@@ -5002,7 +5013,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperObstacles:
   - {fileID: 4912557873655183163, guid: 9d7390da5dde304488bd09f3fcfa1fa9, type: 3}
-  - {fileID: 8443197279887819977, guid: b1c46ae9d3cd94f46a287fae399996df, type: 3}
   - {fileID: 6787904764652647566, guid: bf6f97477b8e9e84ea91409e12093ade, type: 3}
   - {fileID: 419019892008642613, guid: 4ef512ba5e128364e986e45ea33e8745, type: 3}
   - {fileID: 8670487142021066743, guid: 6c9fb62c6dc7f44488e6bf5f302df8c8, type: 3}
@@ -5011,6 +5021,7 @@ MonoBehaviour:
   lowerObstacles:
   - {fileID: 3026379503183659224, guid: f5d6643dc28a3dc4187f54388d7172b1, type: 3}
   - {fileID: 5456897805750228315, guid: 290b1d8acfc48d34292997266922fbbe, type: 3}
+  - {fileID: 8443197279887819977, guid: b1c46ae9d3cd94f46a287fae399996df, type: 3}
   spawnRate: 0.9
   cam: {fileID: 519420031}
 --- !u!4 &1466517709
@@ -5059,6 +5070,7 @@ MonoBehaviour:
   - "It\u2019s not easy to swim far. But let\u2019s try!"
   - "Pollution seems to be everywhere. Let\u2019s try to swim!"
   - What a nice day for a swim
+  - "\rI think I see a jellyfish!\u2026 Oh no, it\u2019s just a plastic bag"
 --- !u!114 &1466517712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,7 +5136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1607072619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5191,13 +5203,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 33
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5437,8 +5449,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5642,8 +5654,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
