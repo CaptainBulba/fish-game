@@ -16,8 +16,6 @@ public class Obstacle : MonoBehaviour
     private AudioSource audioSource;
     private PlayerMovement playerMovement;
 
-    private bool isCrashed = false;
-
    // private string crashAnim = "Crash";
 
     public float changeSceneAfter;
@@ -30,7 +28,7 @@ public class Obstacle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == obstacleTag && !isCrashed)
+        if (col.gameObject.tag == obstacleTag && !playerMovement.GetIsCrashed())
         {
             playerMovement.FreezePlayer();
             StartCoroutine(GameOver(col.gameObject));
@@ -41,7 +39,7 @@ public class Obstacle : MonoBehaviour
     {
         //playerMovement.PlayAnimation(crashAnim); Crash animation 
 
-        isCrashed = true;
+        playerMovement.SetIsCrashed(true);
 
         audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
 

@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     private GameController gameController;
 
     private Animator anim;
+
+    private bool isCrashed = false;
+
     private string swimAnim = "Fish";
 
     void Start()
@@ -44,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (!gameController.GetIsPause())
+            if (!gameController.GetIsPause() && !GetIsCrashed())
             {
                 Move();
                 if (gameObject.transform.position.y >= maxFishCord) rb.velocity = new Vector2(rb.velocity.x, -speedDown);
@@ -86,5 +89,15 @@ public class PlayerMovement : MonoBehaviour
     public void FreezePlayer()
     {
         rb.velocity = Vector3.zero;
+    }
+
+    public bool GetIsCrashed()
+    {
+        return isCrashed;
+    }
+
+    public bool SetIsCrashed(bool value)
+    {
+        return isCrashed = value;
     }
 }
