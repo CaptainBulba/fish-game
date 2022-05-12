@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         gameController = controllerObject.GetComponent<GameController>();
         lastXcords = transform.position.x;
     }

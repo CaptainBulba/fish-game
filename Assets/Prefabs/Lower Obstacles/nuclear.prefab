@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -4.55
   maximumCord: -3.6
+  obstacleSound: {fileID: 8300000, guid: 68cea529e46b8784896542f933e256ac, type: 3}
   facts:
   - 1950-1998 over 100 nuclear blast tests occurred in our oceans
   - Nuclear power plants placed near the water add radiological pollution by releasing

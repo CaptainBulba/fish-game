@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -1.7
   maximumCord: 4.03
+  obstacleSound: {fileID: 8300000, guid: 8045dd9fc8ab95b49bdd2e7e4cf22368, type: 3}
   facts:
   - Cigarette butts are the main source of ocean pollution
   - It takes about 12 years for a cigarette filter to decompose

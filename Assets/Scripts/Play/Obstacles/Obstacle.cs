@@ -16,7 +16,7 @@ public class Obstacle : MonoBehaviour
     private AudioSource audioSource;
     private PlayerMovement playerMovement;
 
-    private string crashAnim = "Crash";
+   // private string crashAnim = "Crash";
 
     public float changeSceneAfter;
 
@@ -31,13 +31,12 @@ public class Obstacle : MonoBehaviour
         if (col.gameObject.tag == obstacleTag)
         {
             StartCoroutine(GameOver(col.gameObject));
-
         }
     }
 
     IEnumerator GameOver(GameObject obstacle)
     {
-        //   playerMovement.PlayAnimation(crashAnim);
+        //playerMovement.PlayAnimation(crashAnim); Crash animation 
         audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
 
         yield return new WaitForSeconds(changeSceneAfter);
