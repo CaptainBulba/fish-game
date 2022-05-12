@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: a7cb25c157040e14fa5d9035bef3e6d0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - PF Square Sans Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c2dc9d25bdea5924db5088ff7c7bd77c, type: 3}
+  - {fileID: 12800000, guid: c5d0e9ef0f4f34d47a45de728320418d, type: 3}
+  - {fileID: 12800000, guid: 61950759b021e4a4a85643f98b21c565, type: 3}
+  - {fileID: 12800000, guid: c13e304de7a49b04db24a10b1638f3bb, type: 3}
+  - {fileID: 12800000, guid: 119f1b68d64b6684fa06d965ffbd9e99, type: 3}
+  - {fileID: 12800000, guid: 5355fe8e278ce5d488c076122bdfdd5d, type: 3}
+  - {fileID: 12800000, guid: 3318f7b293060064989563c7f0fe6a01, type: 3}
+  - {fileID: 12800000, guid: f107454c0565efc429b78cf26d4f6e45, type: 3}
+  - {fileID: 12800000, guid: 159b292fb46c27b44a96c05f058fca74, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

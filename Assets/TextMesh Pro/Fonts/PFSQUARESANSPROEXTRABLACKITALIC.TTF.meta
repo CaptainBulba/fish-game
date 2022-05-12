@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 119f1b68d64b6684fa06d965ffbd9e99
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - PF Square Sans Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3318f7b293060064989563c7f0fe6a01, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
