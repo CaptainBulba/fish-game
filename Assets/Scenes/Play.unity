@@ -2079,7 +2079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 1466517712}
-  changeSceneAfter: 1
+  changeSceneAfter: 0.3
 --- !u!82 &518256906
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3471,11 +3471,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: 0
   maximumCord: 0
-  obstacleSound: {fileID: 0}
+  obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
   facts:
-  - 'In dev: fact #1'
-  - 'In dev: fact #2'
-  - 'In dev: fact #3'
+  - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
+    7 miles deep. That\u2019s too deep to go here"
+  - "Eighty percent of pollution to the marine environment comes from the land.\r\nIncreasing
+    human-generated ocean noise pollution is harming\u2014and even killing\u2014marine
+    species worldwide\r"
+  - It is estimated there are more than 3 million shipwrecks on the ocean floor
+  - "Coral reefs house 25% of all marine life known to man. \nWhen it comes in contact
+    with marine plastic, \nthe probability of it dying goes from 4%-89%"
+  - "Only five percent of the ocean\u2019s floor has been mapped in detail"
+  - 12-14,000 tons of plastic are ingested by North Pacific fish yearly
+  - 500 marine locations are now recorded as dead zones globally
 --- !u!114 &963067903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3864,7 +3872,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4126,11 +4134,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: 0
   maximumCord: 0
-  obstacleSound: {fileID: 0}
+  obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
   facts:
-  - 'In dev: fact #1'
-  - 'In dev: fact #2'
-  - 'In dev: fact #3'
+  - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
+    7 miles deep. That\u2019s too deep to go here"
+  - "Eighty percent of pollution to the marine environment comes from the land.\r\nIncreasing
+    human-generated ocean noise pollution is harming\u2014and even killing\u2014marine
+    species worldwide\r"
+  - It is estimated there are more than 3 million shipwrecks on the ocean floor
+  - "Coral reefs house 25% of all marine life known to man. \nWhen it comes in contact
+    with marine plastic, \nthe probability of it dying goes from 4%-89%"
+  - "Only five percent of the ocean\u2019s floor has been mapped in detail"
+  - 12-14,000 tons of plastic are ingested by North Pacific fish yearly
+  - 500 marine locations are now recorded as dead zones globally
 --- !u!1 &1053884134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,7 +4880,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5126,11 +5142,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: 0
   maximumCord: 0
-  obstacleSound: {fileID: 0}
+  obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
   facts:
-  - 'In dev: fact #1'
-  - 'In dev: fact #2'
-  - 'In dev: fact #3'
+  - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
+    7 miles deep. That\u2019s too deep to go here"
+  - "Eighty percent of pollution to the marine environment comes from the land.\r\nIncreasing
+    human-generated ocean noise pollution is harming\u2014and even killing\u2014marine
+    species worldwide\r"
+  - It is estimated there are more than 3 million shipwrecks on the ocean floor
+  - "Coral reefs house 25% of all marine life known to man. \nWhen it comes in contact
+    with marine plastic, \nthe probability of it dying goes from 4%-89%"
+  - "Only five percent of the ocean\u2019s floor has been mapped in detail"
+  - 12-14,000 tons of plastic are ingested by North Pacific fish yearly
+  - 500 marine locations are now recorded as dead zones globally
 --- !u!1 &1351098175
 GameObject:
   m_ObjectHideFlags: 0

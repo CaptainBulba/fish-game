@@ -30,6 +30,7 @@ public class Obstacle : MonoBehaviour
     {
         if (col.gameObject.tag == obstacleTag)
         {
+            playerMovement.FreezePlayer();
             StartCoroutine(GameOver(col.gameObject));
         }
     }

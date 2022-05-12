@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float yMovement;
 
     private float lastXcords;
-
+    
     private Rigidbody2D rb;
 
     public GameObject controllerObject;
@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!gameController.GetIsPause())
             {
-
                 Move();
                 if (gameObject.transform.position.y >= maxFishCord) rb.velocity = new Vector2(rb.velocity.x, -speedDown);
             }
@@ -55,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (!gameController.GetIsPause())
                 {
-                    rb.velocity = Vector3.zero;
+                    FreezePlayer();
                     gameController.SetGamePause(true);
                 }
                 else gameController.SetGamePause(false);
@@ -82,5 +81,10 @@ public class PlayerMovement : MonoBehaviour
     public void PlayAnimation(string animName)
     {
         anim.Play(animName);
+    }
+
+    public void FreezePlayer()
+    {
+        rb.velocity = Vector3.zero;
     }
 }
