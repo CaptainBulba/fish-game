@@ -20,7 +20,8 @@ public class Spawner : MonoBehaviour
 
     private bool objectToSpawn = true;
 
-    private float maxObstacleRotation = 180f;
+    float[] upperRotation = new float[2] { 0f, 180f };
+    float[] lowerRotation = new float[2] { -25f, 25f };
 
     private DeleteObstacle deleteObstacle;
 
@@ -54,8 +55,24 @@ public class Spawner : MonoBehaviour
 
         GameObject instanObject = Instantiate(obstaclePrefab, new Vector2(rightScreenEdge, obstacleCords), Quaternion.identity);
         instanObject.transform.parent = gameObject.transform;
-        
-        if (objectToSpawn) instanObject.transform.rotation = Quaternion.Euler(0.0f, 0.0f, Random.Range(0f, maxObstacleRotation));
+
+
+        float minRotation, maxRotation, yRotation;
+
+        if (objectToSpawn)
+        {
+            minRotation = upperRotation[0];
+            maxRotation = upperRotation[1];
+            yRotation = 0f;
+        }
+        else
+        {
+            minRotation = lowerRotation[0];
+            maxRotation = lowerRotation[1];
+            yRotation = 180f;
+        }
+            
+        instanObject.transform.rotation = Quaternion.Euler(0.0f, yRotation, Random.Range(minRotation, maxRotation));
 
         StartCoroutine(deleteObstacle.SelfDestruct(instanObject));
     }
