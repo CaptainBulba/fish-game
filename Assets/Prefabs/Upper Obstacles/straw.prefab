@@ -100,8 +100,10 @@ MonoBehaviour:
   maximumCord: -1.25
   obstacleSound: {fileID: 8300000, guid: ad8ccfaa970da7949aa80815a3488616, type: 3}
   facts:
-  - Straw #1
-  - Straw #2
+  - 500 million straws are used in the US everyday
+  - Straws are among the most collected trash on beaches every year
+  - Many companies and countries are switching to paper straws
+  - There are many alternatives to plastic straws
 --- !u!60 &1013547895993612783
 PolygonCollider2D:
   m_ObjectHideFlags: 0
