@@ -25,8 +25,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isCrashed = false;
 
-    private string swimAnim = "Fish";
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
