@@ -37,19 +37,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!gameController.GetIsStart())
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+            if (Input.GetKeyDown(KeyCode.Space)) 
                 gameController.StartGame();
-               // PlayAnimation(swimAnim);
-            }
         }
         else
         {
-            if (!gameController.GetIsPause() && !GetIsCrashed())
-            {
+            if (!gameController.GetIsPause() && !GetIsCrashed()) 
                 Move();
-                if (gameObject.transform.position.y >= maxFishCord) rb.velocity = new Vector2(rb.velocity.x, -speedDown);
-            }
 
             if (Input.GetKeyDown(KeyCode.P))
             {
@@ -58,7 +52,8 @@ public class PlayerMovement : MonoBehaviour
                     FreezePlayer();
                     gameController.SetGamePause(true);
                 }
-                else gameController.SetGamePause(false);
+                else 
+                    gameController.SetGamePause(false);
             }
         }
     }
