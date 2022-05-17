@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         lastXcords = transform.position.x;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!gameController.GetIsStart())
         {
@@ -65,11 +65,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-
         if (Input.GetKey(KeyCode.Space)) yMovement = speedUp;
         else yMovement = -speedDown;
 
         rb.velocity = new Vector2(xMovement, yMovement);
+
         UpdateDistance();
     }
 

@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 322507787}
   m_Layer: 0
   m_Name: Upper wall
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1541,7 +1541,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322507784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022600174, y: 6, z: 10}
+  m_LocalPosition: {x: -0.022600174, y: 4.5, z: 10}
   m_LocalScale: {x: 17.975128, y: 0.28307068, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -2040,10 +2040,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e13ebce08d754591aa0b560d9a78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFishCord: 5
-  speedUp: 1.8
-  speedDown: 1.5
-  xMovement: 3
+  maxFishCord: 4.5
+  speedUp: 2
+  speedDown: 2
+  xMovement: 4
   controllerObject: {fileID: 1466517707}
 --- !u!50 &518256901
 Rigidbody2D:
@@ -5230,7 +5230,7 @@ MonoBehaviour:
   - {fileID: 3026379503183659224, guid: f5d6643dc28a3dc4187f54388d7172b1, type: 3}
   - {fileID: 5456897805750228315, guid: 290b1d8acfc48d34292997266922fbbe, type: 3}
   - {fileID: 3986415892084799446, guid: f167154955d777641ab78013652f7068, type: 3}
-  spawnRate: 0.9
+  spawnRate: 0.6
   cam: {fileID: 519420031}
 --- !u!4 &1466517709
 Transform:
