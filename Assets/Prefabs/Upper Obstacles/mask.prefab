@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d9694f3ccecb54c9335211eb56d173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumCord: 0
-  maximumCord: 0
+  minimumCord: -2.2
+  maximumCord: 4.9
   obstacleSound: {fileID: 8300000, guid: 6fa213fc71f6d794e8350c7d23b1e4df, type: 3}
   facts:
   - Most disposable face masks contain plastics or other by-products of plastics

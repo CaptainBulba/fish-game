@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d9694f3ccecb54c9335211eb56d173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumCord: -1.5
-  maximumCord: 4
+  minimumCord: -2.6
+  maximumCord: 5
   obstacleSound: {fileID: 8300000, guid: 8ab733ae925b4d54799814e276b33f21, type: 3}
   facts:
   - Aluminum cans contain plastic that breaks down into microplastics in the ocean

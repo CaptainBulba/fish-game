@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d9694f3ccecb54c9335211eb56d173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumCord: 4.05
-  maximumCord: -1.25
+  minimumCord: 4.8
+  maximumCord: -2.7
   obstacleSound: {fileID: 8300000, guid: ad8ccfaa970da7949aa80815a3488616, type: 3}
   facts:
   - 500 million straws are used in the US everyday

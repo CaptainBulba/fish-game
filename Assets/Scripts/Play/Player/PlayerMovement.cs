@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         lastXcords = transform.position.x;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (!gameController.GetIsStart())
         {

@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d9694f3ccecb54c9335211eb56d173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumCord: -1.7
-  maximumCord: 4.03
+  minimumCord: -2.9
+  maximumCord: 4.4
   obstacleSound: {fileID: 8300000, guid: 8045dd9fc8ab95b49bdd2e7e4cf22368, type: 3}
   facts:
   - Cigarette butts are the main source of ocean pollution
