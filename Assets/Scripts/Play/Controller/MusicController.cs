@@ -5,23 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class MusicController : MonoBehaviour
 {
+    public AudioSource audioSource;
+
     public float maxVolume;
     private float soundVolume;
 
     private bool soundToggle = true;
 
-    private AudioSource audioSource;
-
-    public AudioClip playMusic;
-    public AudioClip gameoverMusic;
-
     private string playScene = "Play";
-    private string gameoverScene = "Gameover";
+
+    public static MusicController Instance { get; private set; }
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+            Destroy(gameObject);
+    }
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-
         audioSource.volume = maxVolume;
     }
 
@@ -41,14 +48,9 @@ public class MusicController : MonoBehaviour
         audioSource.volume = soundVolume;
     }
 
-    public void ChangeMusic()
+    public void ChangeMusic(AudioClip clip)
     {
-        string levelName = SceneManager.GetActiveScene().name;
-        AudioClip music;
-
-        if (levelName == playScene) music = playMusic;
-        else music = gameoverMusic;
-
-        audioSource.clip = music;
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }

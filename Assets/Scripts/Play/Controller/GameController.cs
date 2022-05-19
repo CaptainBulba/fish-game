@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public AudioClip playMusic;
+
     public GameObject startInterface;
     public GameObject playInterface;
     public GameObject pauseInterface;
@@ -24,6 +26,8 @@ public class GameController : MonoBehaviour
     void Start()    
     {
         spawnerScript = GetComponent<Spawner>();
+
+        MusicController.Instance.ChangeMusic(playMusic);
     }
 
     public bool GetIsPause()

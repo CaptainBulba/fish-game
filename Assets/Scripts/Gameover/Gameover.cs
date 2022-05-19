@@ -10,8 +10,8 @@ public class Gameover : MonoBehaviour
 {
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI factText;
-    int skipFrames = 10;
-    int currentFrame = 0;
+
+    public AudioClip gameoverMusic;
 
     private string playScene = "Play";
 
@@ -20,6 +20,8 @@ public class Gameover : MonoBehaviour
 
     void Start()
     {
+        MusicController.Instance.ChangeMusic(gameoverMusic);
+
         float distance = PlayerPrefs.GetFloat(distanceName);
         string fact = PlayerPrefs.GetString(factName);
 
@@ -33,12 +35,6 @@ public class Gameover : MonoBehaviour
 
     void Update()
     {
-        if(currentFrame <= skipFrames)
-        {
-            currentFrame++;
-            return;
-        }
-
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(playScene);
     }
