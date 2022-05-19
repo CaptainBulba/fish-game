@@ -179,7 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCord: -2.3
   maximumCord: 4.8
-  obstacleSound: {fileID: 8300000, guid: 0f943e8825256c44bb077cfbff65dcdd, type: 3}
+  obstacleSound: {fileID: 8300000, guid: 3554bc2df468d204d867bc18aaaa8fb8, type: 3}
+  soundVolume: 1
   facts:
   - Each year, 8 million tons of plastic reaches our oceans
   - Annually, we use 500 Billion plastic bottles

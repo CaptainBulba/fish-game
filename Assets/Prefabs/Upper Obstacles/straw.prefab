@@ -99,6 +99,7 @@ MonoBehaviour:
   minimumCord: 4.8
   maximumCord: -2.7
   obstacleSound: {fileID: 8300000, guid: ad8ccfaa970da7949aa80815a3488616, type: 3}
+  soundVolume: 1
   facts:
   - 500 million straws are used in the US everyday
   - Straws are among the most collected trash on beaches every year

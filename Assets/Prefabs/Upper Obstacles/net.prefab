@@ -99,6 +99,7 @@ MonoBehaviour:
   minimumCord: -2
   maximumCord: 4.6
   obstacleSound: {fileID: 8300000, guid: 2c1e38af7a6fa8649a2ac0d0f13036be, type: 3}
+  soundVolume: 1
   facts:
   - 100,000 marine animals die from getting entangled in plastic yearly
   - Many marine animals become entangled in fishing gear and other marine debris

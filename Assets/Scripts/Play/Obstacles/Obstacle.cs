@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Obstacle : MonoBehaviour
 {
-    public GameController gameController;
+    private AudioSource audioSource;
+    private PlayerMovement playerMovement;
+    private GameController gameController;
 
     private string obstacleTag = "Obstacle";
     private string gameoverScene = "Gameover";
@@ -13,17 +15,15 @@ public class Obstacle : MonoBehaviour
     private string distanceName = "distance";
     private string factName = "fact";
 
-    private AudioSource audioSource;
-    private PlayerMovement playerMovement;
-
-   // private string crashAnim = "Crash";
-
     public float changeSceneAfter;
+
+    public string crashAnim = "Crash";
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         playerMovement = GetComponent<PlayerMovement>();
+        gameController = playerMovement.controllerObject.GetComponent<GameController>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -37,10 +37,11 @@ public class Obstacle : MonoBehaviour
 
     IEnumerator GameOver(GameObject obstacle)
     {
-        //playerMovement.PlayAnimation(crashAnim); Crash animation 
 
         playerMovement.SetIsCrashed(true);
+        playerMovement.PlayAnimation(crashAnim);
 
+        audioSource.volume = obstacle.GetComponent<ObstacleData>().GetSoundVolume();
         audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
 
         yield return new WaitForSeconds(changeSceneAfter);

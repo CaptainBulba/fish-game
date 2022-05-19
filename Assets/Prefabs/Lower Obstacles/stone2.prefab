@@ -208,15 +208,16 @@ MonoBehaviour:
   minimumCord: -4.5
   maximumCord: -3.65
   obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
+  soundVolume: 1
   facts:
   - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
     7 miles deep. That\u2019s too deep to go here"
-  - "Eighty percent of pollution to the marine environment comes from the land.\r\nIncreasing
-    human-generated ocean noise pollution is harming\u2014and even killing\u2014marine
-    species worldwide\r"
+  - "Eighty percent of pollution to the marine environment comes from the land.\r"
   - It is estimated there are more than 3 million shipwrecks on the ocean floor
   - "Coral reefs house 25% of all marine life known to man. \nWhen it comes in contact
     with marine plastic, \nthe probability of it dying goes from 4%-89%"
   - "Only five percent of the ocean\u2019s floor has been mapped in detail"
   - 12-14,000 tons of plastic are ingested by North Pacific fish yearly
   - 500 marine locations are now recorded as dead zones globally
+  - "\nIncreasing human-generated ocean noise pollution is harming\u2014and even
+    killing\u2014marine species worldwide\r"
