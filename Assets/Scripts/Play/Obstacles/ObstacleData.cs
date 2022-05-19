@@ -9,8 +9,6 @@ public class ObstacleData : MonoBehaviour
 
     public AudioClip obstacleSound;
 
-    public float soundVolume;
-
     [TextArea]
     public string[] facts;
 
@@ -33,10 +31,5 @@ public class ObstacleData : MonoBehaviour
     public AudioClip GetObstacleSound()
     {
         return obstacleSound;
-    }
-
-    public float GetSoundVolume()
-    {
-        return soundVolume;
     }
 }
