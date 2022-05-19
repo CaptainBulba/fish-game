@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceText: {fileID: 417265468}
   factText: {fileID: 1774969041}
-  gameoverMusic: {fileID: 8300000, guid: 2c1e38af7a6fa8649a2ac0d0f13036be, type: 3}
+  gameoverMusic: {fileID: 8300000, guid: 7ba4554ae4dda8a478c1ff01de8a199c, type: 3}
 --- !u!4 &768554161
 Transform:
   m_ObjectHideFlags: 0
