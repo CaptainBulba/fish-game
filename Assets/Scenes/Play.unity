@@ -5160,7 +5160,6 @@ GameObject:
   - component: {fileID: 1466517712}
   - component: {fileID: 1466517708}
   - component: {fileID: 1466517711}
-  - component: {fileID: 1466517710}
   - component: {fileID: 1466517713}
   m_Layer: 0
   m_Name: GameController
@@ -5209,18 +5208,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1466517710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466517707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b487f1cdba99929479904b25ede037a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1466517711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6088,8 +6075,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1877548554}
   - component: {fileID: 1877548553}
+  - component: {fileID: 1877548555}
   m_Layer: 0
-  m_Name: BG Music
+  m_Name: MusicController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6105,7 +6093,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 560383431d8eaf7488cb33bf964e0109, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 92948d213637b834c941e910c5e78e01, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6205,6 +6193,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1877548555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877548552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5f18e509c163346a075a5a72c207dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883323074
 GameObject:
   m_ObjectHideFlags: 0
