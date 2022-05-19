@@ -25,8 +25,12 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isCrashed = false;
 
+    private AudioSource audioSource;
+    public AudioClip buttonSound;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         gameController = controllerObject.GetComponent<GameController>();
@@ -37,8 +41,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!gameController.GetIsStart())
         {
-            if (Input.GetKeyDown(KeyCode.Space)) 
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                PlayButtonSound();
                 gameController.StartGame();
+            }
+                
         }
         else
         {
@@ -47,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.P))
             {
+                PlayButtonSound();
                 if (!gameController.GetIsPause())
                 {
                     FreezePlayer();
@@ -92,5 +101,10 @@ public class PlayerMovement : MonoBehaviour
     public bool SetIsCrashed(bool value)
     {
         return isCrashed = value;
+    }
+
+    private void PlayButtonSound()
+    {
+        audioSource.PlayOneShot(buttonSound);
     }
 }

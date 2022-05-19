@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -42,6 +43,9 @@ public class MusicController : MonoBehaviour
         else soundVolume = 0f;
 
         soundToggle = !soundToggle;
+
+        if (SceneManager.GetActiveScene().name == "Play" && soundToggle) GameObject.Find("Music").GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
+        else if(SceneManager.GetActiveScene().name == "Play" && !soundToggle) GameObject.Find("Music").GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
 
         audioSource.volume = soundVolume;
     }

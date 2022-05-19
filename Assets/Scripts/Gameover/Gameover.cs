@@ -11,7 +11,9 @@ public class Gameover : MonoBehaviour
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI factText;
 
+    private AudioSource audioSource;
     public AudioClip gameoverMusic;
+    public AudioClip buttonSound;
 
     private string playScene = "Play";
 
@@ -20,6 +22,8 @@ public class Gameover : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         MusicController.Instance.ChangeMusic(gameoverMusic);
 
         float distance = PlayerPrefs.GetFloat(distanceName);
@@ -36,6 +40,10 @@ public class Gameover : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
+        {
+            audioSource.PlayOneShot(buttonSound);
             SceneManager.LoadScene(playScene);
+        }
+            
     }
 }
