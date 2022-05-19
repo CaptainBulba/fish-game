@@ -99,6 +99,7 @@ MonoBehaviour:
   minimumCord: -2.6
   maximumCord: 5
   obstacleSound: {fileID: 8300000, guid: 8ab733ae925b4d54799814e276b33f21, type: 3}
+  soundVolume: 0.5
   facts:
   - Aluminum cans contain plastic that breaks down into microplastics in the ocean
   - In the ocean, a can will take up to 200 years to decompose

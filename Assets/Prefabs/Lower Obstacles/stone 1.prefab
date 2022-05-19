@@ -99,6 +99,7 @@ MonoBehaviour:
   minimumCord: -4.5
   maximumCord: -3.6
   obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
+  soundVolume: 1
   facts:
   - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
     7 miles deep. That\u2019s too deep to go here"

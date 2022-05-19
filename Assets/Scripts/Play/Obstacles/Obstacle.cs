@@ -41,6 +41,7 @@ public class Obstacle : MonoBehaviour
         playerMovement.SetIsCrashed(true);
         playerMovement.PlayAnimation(crashAnim);
 
+        audioSource.volume = obstacle.GetComponent<ObstacleData>().GetSoundVolume();
         audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
 
         yield return new WaitForSeconds(changeSceneAfter);

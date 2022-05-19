@@ -1640,6 +1640,7 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   obstacleSound: {fileID: 0}
+  soundVolume: 0
   facts:
   - 'In dev: wall #1'
   - 'In dev: wall #2'
@@ -3219,6 +3220,7 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   obstacleSound: {fileID: 0}
+  soundVolume: 0
   facts:
   - 'In dev: wall #1'
   - 'In dev: wall #2'
@@ -3435,6 +3437,7 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
+  soundVolume: 1
   facts:
   - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
     7 miles deep. That\u2019s too deep to go here"
@@ -4098,6 +4101,7 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
+  soundVolume: 1
   facts:
   - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
     7 miles deep. That\u2019s too deep to go here"
@@ -5106,6 +5110,7 @@ MonoBehaviour:
   minimumCord: 0
   maximumCord: 0
   obstacleSound: {fileID: 8300000, guid: 5d6278978251a92448458f3334f2b583, type: 3}
+  soundVolume: 1
   facts:
   - "The deepest part of the ocean is called the Mariana Trench, \nwhich is about
     7 miles deep. That\u2019s too deep to go here"
@@ -5181,6 +5186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upperObstacles:
+  - {fileID: 8443197279887819977, guid: b1c46ae9d3cd94f46a287fae399996df, type: 3}
   - {fileID: 419019892008642613, guid: 4ef512ba5e128364e986e45ea33e8745, type: 3}
   - {fileID: 4912557873655183163, guid: 9d7390da5dde304488bd09f3fcfa1fa9, type: 3}
   - {fileID: 6787904764652647566, guid: bf6f97477b8e9e84ea91409e12093ade, type: 3}

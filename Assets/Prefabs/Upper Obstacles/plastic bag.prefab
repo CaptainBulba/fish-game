@@ -99,6 +99,7 @@ MonoBehaviour:
   minimumCord: -2.1
   maximumCord: 5
   obstacleSound: {fileID: 8300000, guid: 68ac65244c7dac8438e77a055a509b29, type: 3}
+  soundVolume: 1
   facts:
   - Annually we discard 1 Trillion plastic bags worldwide
   - Loggerhead sea turtles hunt jellyfish, which look like plastic bags
