@@ -39,15 +39,17 @@ public class MusicController : MonoBehaviour
 
     private void ChangeVolume()
     {
-        if (soundToggle) soundVolume = maxVolume;
-        else soundVolume = 0f;
+        if (soundToggle) soundVolume = 0f;
+        else soundVolume = maxVolume;
 
         soundToggle = !soundToggle;
 
-        if (SceneManager.GetActiveScene().name == "Play" && soundToggle) GameObject.Find("Music").GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
-        else if(SceneManager.GetActiveScene().name == "Play" && !soundToggle) GameObject.Find("Music").GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
-
         audioSource.volume = soundVolume;
+    }
+
+    public float GetSoundVolume()
+    {
+        return soundVolume;
     }
 
     public void ChangeMusic(AudioClip clip)

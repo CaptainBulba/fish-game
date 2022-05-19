@@ -41,6 +41,7 @@ public class Gameover : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            audioSource.volume = MusicController.Instance.GetSoundVolume();
             audioSource.PlayOneShot(buttonSound);
             SceneManager.LoadScene(playScene);
         }

@@ -105,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayButtonSound()
     {
+        audioSource.volume = MusicController.Instance.GetSoundVolume();
         audioSource.PlayOneShot(buttonSound);
     }
 }
