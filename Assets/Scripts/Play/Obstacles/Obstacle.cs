@@ -17,6 +17,8 @@ public class Obstacle : MonoBehaviour
 
     public float changeSceneAfter;
 
+    public string crashAnim = "Crash";
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -37,6 +39,7 @@ public class Obstacle : MonoBehaviour
     {
 
         playerMovement.SetIsCrashed(true);
+        playerMovement.PlayAnimation(crashAnim);
 
         audioSource.PlayOneShot(obstacle.GetComponent<ObstacleData>().GetObstacleSound());
 

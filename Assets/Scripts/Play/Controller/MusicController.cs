@@ -12,8 +12,6 @@ public class MusicController : MonoBehaviour
 
     private bool soundToggle = true;
 
-    private string playScene = "Play";
-
     public static MusicController Instance { get; private set; }
 
     void Awake()

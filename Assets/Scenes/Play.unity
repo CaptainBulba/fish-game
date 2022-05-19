@@ -384,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40719263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.9, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1685850538}
@@ -450,8 +450,8 @@ MonoBehaviour:
   - {fileID: 1660529655}
   - {fileID: 263324227}
   m_Bounds:
-    m_Center: {x: 0, y: -0.0005187988, z: 0}
-    m_Extent: {x: 4.62037, y: 4.0147214, z: 0}
+    m_Center: {x: -0.0000009536743, y: -0.0005187988, z: 0}
+    m_Extent: {x: 4.6203704, y: 4.014721, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!212 &40719267
@@ -2175,7 +2175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eaa208d479ab4c4b917e7f210ac6902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeSceneAfter: 0.3
+  changeSceneAfter: 0.95
+  crashAnim: Crash
 --- !u!82 &518256906
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5180,7 +5181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upperObstacles:
-  - {fileID: 8443197279887819977, guid: b1c46ae9d3cd94f46a287fae399996df, type: 3}
   - {fileID: 419019892008642613, guid: 4ef512ba5e128364e986e45ea33e8745, type: 3}
   - {fileID: 4912557873655183163, guid: 9d7390da5dde304488bd09f3fcfa1fa9, type: 3}
   - {fileID: 6787904764652647566, guid: bf6f97477b8e9e84ea91409e12093ade, type: 3}
