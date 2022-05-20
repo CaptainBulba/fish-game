@@ -9,7 +9,7 @@ public class MusicController : MonoBehaviour
     public AudioSource audioSource;
 
     public float maxVolume;
-    private float soundVolume;
+    private float soundVolume = 1f;
 
     private bool soundToggle = true;
 
